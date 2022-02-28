@@ -41,7 +41,7 @@
 
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-app-bar-title>Vuetify Todo</v-app-bar-title>
+      <v-app-bar-title class="text-no-wrap">{{ title }}</v-app-bar-title>
 
       <v-spacer></v-spacer>
 
@@ -68,6 +68,7 @@
 export default {
   data: () => ({
     drawer: false,
+    title: "Vuetify Todo",
     items: [
       { title: "Todo", icon: "mdi-format-list-checks", to: "/" },
       { title: "About", icon: "mdi-help-box", to: "/about" },
